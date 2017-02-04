@@ -4,7 +4,7 @@ A simple micro-service for color functions.
 
 ---
 
-### Usage
+### Web Usage
 
 1. Visit https://color.now.sh/5362b5, and replace `5362b5` with the color
 hex of your choice.
@@ -30,6 +30,22 @@ hex of your choice.
     }
   }
   ```
+
+### Development
+
+1. Install missing dependencies.
+
+  ```bash
+  yarn install
+  ```
+
+2. Start the server.
+
+  ```bash
+  yarn start
+  ```
+
+3. Open [localhost:3000](http://localhost:3000).
 
 ### License
 
