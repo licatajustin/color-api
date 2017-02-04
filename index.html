@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Color API</title>
+    <link rel="icon" href="/favicon.ico">
+    <style>
+    body {
+      background-color: #5362b5;
+      color: #5c5f70;
+      font-size: 16px;
+      font-style: normal;
+      font-family: Menlo, Monaco, "Lucida Console", "Liberation Mono",
+                   "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New",
+                   monospace, serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      background-color: #fff;
+      padding-bottom: 50px;
+      padding-top: 50px;
+      text-align: center;
+    }
+
+    .title,
+    .subtitle {
+      margin: 0 0 2rem;
+    }
+
+    .title {
+      font-size: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+    }
+
+    .example-link {
+      background-color: #edeef5;
+      border-radius: 0.25rem;
+      box-shadow: 0 5px 20px rgba(70, 73, 77, 0.1);
+      color: #5362B5;
+      display: inline-block;
+      padding: 0.5rem;
+      text-decoration: none;
+      -webkit-transition: box-shadow 0.15s ease-in-out;
+              transition: box-shadow 0.15s ease-in-out;
+    }
+
+    .example-link:active {
+      box-shadow: none;
+    }
+
+    .example-output {
+      color: #fff;
+      margin: 0;
+      padding-bottom: 4rem;
+      padding-top: 4rem;
+    }
+
+    .example-json {
+      margin-left: auto;
+      margin-right: auto;
+      width: 200px;
+    }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <h1 class="title">Color API</h1>
+      <p class="subtitle">
+        A simple micro-service for color functions.
+      </p>
+
+      <a href="https://color.now.sh/5362b5" class="example-link">
+        https://color.now.sh/5362b5
+      </a>
+    </section>
+
+    <div class="example-output">
+      <pre class="example-json"></pre>
+    </div>
+  </body>
+
+  <script>
+  var output = {
+    "color": "#5362b5",
+    "lighten": {
+      "5%": "#6572bd",
+      "10%": "#8893cc",
+      "15%": "#bec4e3",
+      "20%": "#ffffff",
+      "25%": "#ffffff"
+    },
+    "darken": {
+      "5%": "#4856a7",
+      "10%": "#384483",
+      "15%": "#21284e",
+      "20%": "#030306",
+      "25%": "#000000"
+    }
+  }
+  var stringifiedJSON = JSON.stringify(output, undefined, 2)
+
+  document.querySelector(".example-json").innerHTML = stringifiedJSON
+  </script>
+</html>
