@@ -6,6 +6,8 @@
     <link rel="icon" href="/favicon.ico">
     <style>
     body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
       background-color: #5362b5;
       color: #5c5f70;
       font-size: 16px;
@@ -43,6 +45,7 @@
       box-shadow: 0 5px 20px rgba(70, 73, 77, 0.1);
       color: #5362B5;
       display: inline-block;
+      margin: 0 0 1rem;
       padding: 0.5rem;
       text-decoration: none;
       -webkit-transition: box-shadow 0.15s ease-in-out;
@@ -51,6 +54,12 @@
 
     .example-link:active {
       box-shadow: none;
+    }
+
+    .twitter-share-button {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .example-output {
@@ -77,6 +86,8 @@
       <a href="https://color.now.sh/5362b5" class="example-link">
         https://color.now.sh/5362b5
       </a>
+
+      <a href="https://twitter.com/share" class="twitter-share-button" data-text="A simple micro-service for color functions when writing CSS." data-url="https://color.now.sh/" data-via="justinlicata" data-related="" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     </section>
 
     <div class="example-output">

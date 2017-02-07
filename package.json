@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "express": "^4.14.1",
+    "express-google-analytics": "^1.0.2",
     "serve-favicon": "^2.3.2",
     "tinycolor2": "^1.4.1"
   },
